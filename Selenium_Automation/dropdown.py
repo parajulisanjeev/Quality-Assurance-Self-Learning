@@ -22,12 +22,6 @@ time.sleep(2)
 password.send_keys("secret_sauce")
 time.sleep(2)
 
-# if login_button.is_enabled():
-#     print("Login button is enabled")
-# else:
-#     print("Login button is disabled")
-
-
 login_button.click()
 time.sleep(2)
 
