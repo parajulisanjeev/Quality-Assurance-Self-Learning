@@ -9,4 +9,4 @@ class HomePage:
     def click_addtocart(self):
         self.driver.find_element(*self.addtocart).click()
         print("Clicked on Add to Cart button")
-        time.sleep(2)
+        time.sleep(5)
