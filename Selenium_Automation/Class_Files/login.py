@@ -16,3 +16,4 @@ class login_page:
 
     def click_login_button(self):
         print("Clicking login button:", self.login_button)
+        
