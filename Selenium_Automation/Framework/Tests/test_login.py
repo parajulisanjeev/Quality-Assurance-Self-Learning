@@ -1,6 +1,6 @@
 from selenium import webdriver
 import pytest
-from Framework.Pages.login import LoginPage
+from Pages.login import LoginPage
 
 @pytest.fixture()
 def driver():
@@ -11,3 +11,7 @@ def driver():
 
 def test_login(driver):
     obj=LoginPage(driver)
+    obj.open_url("https://saucedemo.com")
+    obj.enter_username("standard_user")
+    obj.enter_password("secret_sauce")
+    obj.click_login_button()
